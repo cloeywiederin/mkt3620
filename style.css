@@ -1,0 +1,380 @@
+/* =========================
+   GENERAL WEBSITE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #333;
+    background-color: #fffafc;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid #f0dce3;
+
+    box-shadow: 0 3px 15px rgba(80, 40, 60, 0.08);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Name */
+
+.nav-logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #333;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.logo-dot {
+    width: 10px;
+    height: 10px;
+
+    background: #d88ca5;
+
+    border-radius: 50%;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #444;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c66f8d;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 82vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(circle at top left, #f9e1e9, transparent 35%),
+        radial-gradient(circle at bottom right, #f4e6ef, transparent 35%),
+        #fffafc;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.small-heading {
+    color: #c66f8d;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 65px;
+
+    color: #292929;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #c66f8d;
+}
+
+.hero h2 {
+    font-size: 25px;
+
+    font-weight: normal;
+
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 650px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    color: #555;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    background: #c66f8d;
+
+    color: white;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+
+    background: #a95773;
+}
+
+.secondary-button {
+    background: white;
+
+    color: #c66f8d;
+
+    border: 2px solid #c66f8d;
+}
+
+.secondary-button:hover {
+    background: #f9e5eb;
+
+    color: #a95773;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 90px 25px;
+
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 38px;
+
+    margin-bottom: 20px;
+
+    color: #292929;
+}
+
+.intro p:last-child {
+    font-size: 17px;
+
+    color: #666;
+}
+
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.highlights {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 20px 25px 90px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.highlight-card {
+    background: white;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    border: 1px solid #f1dfe5;
+
+    box-shadow:
+        0 8px 25px rgba(100, 50, 70, 0.07);
+
+    transition: 0.3s;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.highlight-card h3 {
+    color: #c66f8d;
+
+    margin-bottom: 10px;
+}
+
+.highlight-card p {
+    color: #666;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    text-align: center;
+
+    padding: 80px 25px;
+
+    background: #f9e7ed;
+}
+
+.cta h2 {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    color: #555;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background: #292929;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+footer p:last-child {
+    color: #d9a9b9;
+
+    margin-top: 5px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .nav-container {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+
+}
