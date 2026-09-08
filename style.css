@@ -30,28 +30,58 @@ body {
 }
 
 
+
 /* =========================
-   HEADER
+   HEADER & BRAND LOGO
    ========================= */
 
 .site-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
-    border-bottom: 1px solid #ddd;
+    padding: 18px 30px;
     background-color: white;
+    border-bottom: 1px solid #ead2dc;
 }
 
-.logo {
-    width: 150px;
-    height: 70px;
+/* Personal Brand Logo */
+
+.brand-logo {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-    font-size: 24px;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.brand-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
     font-weight: bold;
+    font-style: italic;
+    color: #b85c7a;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    margin-top: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+/* Logo hover effect */
+
+.brand-logo:hover .brand-name {
+    color: #8f4964;
+    transform: translateY(-1px);
+    transition: 0.2s ease;
+}
+
+.header-info {
+    font-size: 14px;
+    color: #777;
 }
 
 
