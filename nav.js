@@ -4,24 +4,25 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Header + Logo
-    const header = document.querySelector("#site-header");
+  // Header + Logo
+const header = document.querySelector("#site-header");
 
-    if (header) {
-        header.innerHTML = `
-            <div class="site-header">
+if (header) {
+    header.innerHTML = `
+        <header class="site-header">
 
-                <div class="logo">
-                    Cloey
-                </div>
+            <a href="index.html" class="brand-logo">
+                <span class="brand-name">Cloey</span>
+                <span class="brand-subtitle">MARKETING & CREATIVE</span>
+            </a>
 
-                <div class="header-info">
-                    <p>Marketing • Leadership • Creativity</p>
-                </div>
-
+            <div class="header-info">
+                <p>Marketing • Leadership • Creativity</p>
             </div>
-        `;
-    }
+
+        </header>
+    `;
+}
 
 
     // Primary Navigation
