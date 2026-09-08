@@ -1,0 +1,399 @@
+/* =========================
+   GENERAL PAGE STYLING
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8dfe8; /* light pink background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main website container
+   Leaves 10% of the screen on BOTH sides */
+.site-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+.logo {
+    width: 150px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   PRIMARY NAVIGATION
+   ========================= */
+
+.main-nav {
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.main-nav li {
+    border-right: 1px solid #ddd;
+}
+
+.main-nav li:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.main-nav a {
+    display: block;
+    padding: 14px 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: #f8dfe8;
+    color: #b85c7a;
+}
+
+
+/* =========================
+   MAIN PAGE LAYOUT
+   ========================= */
+
+.page-layout {
+    display: grid;
+
+    /* Left sidebar | Main content | Right sidebar */
+    grid-template-columns: 18% 1fr 20%;
+
+    min-height: 650px;
+}
+
+
+/* =========================
+   LEFT SIDEBAR
+   ========================= */
+
+.left-sidebar {
+    border-right: 1px solid #ddd;
+    padding: 25px 20px;
+    background-color: #fff;
+}
+
+.left-sidebar h3 {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.left-sidebar ul {
+    list-style: none;
+}
+
+.left-sidebar li {
+    margin-bottom: 10px;
+}
+
+.left-sidebar a {
+    text-decoration: none;
+    color: #555;
+}
+
+.left-sidebar a:hover {
+    color: #b85c7a;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+.main-content {
+    padding: 25px 35px;
+}
+
+
+/* Hero Image */
+
+.hero {
+    width: 100%;
+    height: 250px;
+    background-color: #f3cbd8;
+    border: 1px solid #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #8f4964;
+}
+
+
+/* Main Text */
+
+.content-section {
+    max-width: 750px;
+}
+
+.content-section h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.content-section h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #b85c7a;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+}
+
+.content-section ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   RIGHT SIDEBAR
+   ========================= */
+
+.right-sidebar {
+    border-left: 1px solid #ddd;
+    padding: 25px 20px;
+    background-color: #fff;
+}
+
+.right-sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.right-sidebar ul {
+    list-style: none;
+}
+
+.right-sidebar li {
+    margin-bottom: 12px;
+}
+
+.right-sidebar a {
+    color: #555;
+    text-decoration: none;
+}
+
+.right-sidebar a:hover {
+    color: #b85c7a;
+}
+
+
+/* Sticky content */
+
+.sticky-content {
+    position: sticky;
+    top: 20px;
+}
+
+
+/* =========================
+   SOCIAL MEDIA ICONS
+   ========================= */
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f3cbd8;
+    color: #333;
+    border-radius: 50%;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons a:hover {
+    background-color: #b85c7a;
+    color: white;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.site-footer {
+    border-top: 1px solid #ddd;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    background-color: white;
+}
+
+.site-footer a {
+    color: #b85c7a;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SECONDARY NAVIGATION
+   ========================= */
+
+.secondary-nav {
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.secondary-nav a {
+    margin: 0 10px;
+    color: #777;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.secondary-nav a:hover {
+    color: #b85c7a;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .site-container {
+        width: 90%;
+    }
+
+    .page-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .main-nav a {
+        padding: 10px 15px;
+    }
+
+    .hero {
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        background-color: white;
+    }
+
+    .site-container {
+        width: 100%;
+    }
+
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav li {
+        width: 100%;
+        text-align: center;
+        border-left: none;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .hero {
+        height: 175px;
+    }
+
+    .content-section h1 {
+        font-size: 26px;
+    }
+}
