@@ -427,3 +427,67 @@ body {
         font-size: 26px;
     }
 }
+/* =========================
+   ABOUT ME PHOTO + TEXT
+   ========================= */
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 35px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Photo */
+
+.about-photo {
+    width: 280px;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 5px solid #f8dfe8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* About text */
+
+.about-text h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    color: #b85c7a;
+    margin-bottom: 18px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .about-intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-photo {
+        width: 220px;
+        height: 290px;
+        margin: 0 auto;
+    }
+
+    .header-info {
+        display: none;
+    }
+
+}
