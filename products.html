@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | My Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* PRODUCTS PAGE */
+
+        .products-page {
+            background-color: #fff7fa;
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
+
+        .products-header {
+            text-align: center;
+            padding: 80px 20px 50px;
+        }
+
+        .products-header h1 {
+            color: #9b6478;
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .products-header p {
+            color: #6f5961;
+            font-size: 1.1rem;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .products-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #f0d5df;
+            border-radius: 18px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(180, 120, 140, 0.10);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 30px rgba(180, 120, 140, 0.18);
+        }
+
+        .product-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background-color: #f8dce6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .product-card h2 {
+            color: #9b6478;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        .product-card p {
+            color: #6f5961;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .product-button {
+            display: inline-block;
+            background-color: #d99bad;
+            color: white;
+            text-decoration: none;
+            padding: 10px 22px;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-button:hover {
+            background-color: #b9788d;
+        }
+
+        @media (max-width: 800px) {
+            .products-container {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            .products-header h1 {
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About Me</a>
+            <a href="products.html">Products</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Products Page -->
+    <main class="products-page">
+
+        <section class="products-header">
+            <h1>Products</h1>
+
+            <p>
+                Explore some of the products and services that I
+                am interested in. This page highlights different
+                options while keeping the same simple and welcoming
+                style of my website.
+            </p>
+        </section>
+
+
+        <section class="products-container">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <div class="product-icon">
+                    ♡
+                </div>
+
+                <h2>Product One</h2>
+
+                <p>
+                    Add a short description of your first product
+                    or service here. Explain what makes it useful
+                    and why someone might be interested.
+                </p>
+
+                <a href="#" class="product-button">
+                    Learn More
+                </a>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <div class="product-icon">
+                    ✦
+                </div>
+
+                <h2>Product Two</h2>
+
+                <p>
+                    Add information about your second product or
+                    service here. You can describe its features,
+                    benefits, or purpose.
+                </p>
+
+                <a href="#" class="product-button">
+                    Learn More
+                </a>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <div class="product-icon">
+                    ♧
+                </div>
+
+                <h2>Product Three</h2>
+
+                <p>
+                    Add a description for your third product or
+                    service. Keep the information short, clear,
+                    and easy for visitors to understand.
+                </p>
+
+                <a href="#" class="product-button">
+                    Learn More
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
