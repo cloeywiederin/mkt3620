@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experience | Cloey Wiederin</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================
+           EXPERIENCE PAGE
+           ========================= */
+
+        .experience-page {
+            background-color: #fff7fa;
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
+
+
+        /* =========================
+           HEADER
+           ========================= */
+
+        .experience-header {
+            text-align: center;
+            padding: 80px 20px 55px;
+        }
+
+        .experience-header h1 {
+            color: #9b6478;
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .experience-header p {
+            color: #6f5961;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           EXPERIENCE SECTION
+           ========================= */
+
+        .experience-section {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #9b6478;
+            font-size: 2rem;
+            margin-bottom: 35px;
+        }
+
+
+        /* =========================
+           EXPERIENCE CARDS
+           ========================= */
+
+        .experience-card {
+            background-color: white;
+            border: 1px solid #f0d5df;
+            border-radius: 18px;
+            padding: 35px;
+            margin-bottom: 30px;
+
+            box-shadow: 0 8px 25px rgba(180, 120, 140, 0.10);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(180, 120, 140, 0.18);
+        }
+
+        .experience-card h2 {
+            color: #9b6478;
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+        }
+
+        .experience-card h3 {
+            color: #b9788d;
+            font-size: 1rem;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #8f737d;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .experience-card p {
+            color: #6f5961;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .experience-card ul {
+            color: #6f5961;
+            line-height: 1.7;
+            padding-left: 20px;
+        }
+
+        .experience-card li {
+            margin-bottom: 10px;
+        }
+
+
+        /* =========================
+           EDUCATION
+           ========================= */
+
+        .education-section {
+            width: 90%;
+            max-width: 1000px;
+            margin: 65px auto 0;
+        }
+
+        .education-card {
+            background-color: white;
+            border: 1px solid #f0d5df;
+            border-radius: 18px;
+            padding: 35px;
+            text-align: center;
+
+            box-shadow: 0 8px 25px rgba(180, 120, 140, 0.10);
+        }
+
+        .education-card h2 {
+            color: #9b6478;
+            margin-bottom: 10px;
+        }
+
+        .education-card h3 {
+            color: #b9788d;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .education-card p {
+            color: #6f5961;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           LEADERSHIP
+           ========================= */
+
+        .leadership-section {
+            width: 90%;
+            max-width: 1000px;
+            margin: 65px auto 0;
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .leadership-card {
+            background-color: white;
+            border: 1px solid #f0d5df;
+            border-radius: 18px;
+            padding: 30px;
+
+            box-shadow: 0 8px 25px rgba(180, 120, 140, 0.10);
+        }
+
+        .leadership-card h2 {
+            color: #9b6478;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .leadership-card h3 {
+            color: #b9788d;
+            font-size: 0.95rem;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .leadership-card p {
+            color: #6f5961;
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           SKILLS
+           ========================= */
+
+        .skills-section {
+            width: 90%;
+            max-width: 1000px;
+            margin: 65px auto 0;
+            text-align: center;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skill {
+            background-color: #f8dce6;
+            color: #8f5d70;
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-size: 0.95rem;
+        }
+
+
+        /* =========================
+           FUTURE GOALS
+           ========================= */
+
+        .goals-section {
+            width: 90%;
+            max-width: 1000px;
+            margin: 65px auto 0;
+
+            background-color: #f8dce6;
+            border-radius: 18px;
+            padding: 40px;
+
+            text-align: center;
+        }
+
+        .goals-section h2 {
+            color: #9b6478;
+            margin-bottom: 15px;
+        }
+
+        .goals-section p {
+            color: #6f5961;
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           MOBILE
+           ========================= */
+
+        @media (max-width: 768px) {
+
+            .experience-header h1 {
+                font-size: 2.4rem;
+            }
+
+            .leadership-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-card,
+            .education-card,
+            .leadership-card {
+                padding: 25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
+
+    <nav>
+
+        <div class="nav-container">
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#about">About Me</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="experience.html">Experience</a>
+
+            <a href="index.html#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         MAIN EXPERIENCE PAGE
+         ========================= -->
+
+    <main class="experience-page">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="experience-header">
+
+            <h1>My Experience</h1>
+
+            <p>
+                My experiences at Iowa State University and in the
+                professional world have helped me develop my leadership,
+                communication, marketing, and organizational skills.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             PROFESSIONAL EXPERIENCE
+             ========================= -->
+
+        <section class="experience-section">
+
+            <h2 class="section-title">
+                Professional Experience
+            </h2>
+
+
+            <!-- LEGACY REAL ESTATE -->
+
+            <div class="experience-card">
+
+                <h2>
+                    Social Media Marketing Intern
+                </h2>
+
+                <h3>
+                    Legacy Real Estate of Iowa — Ankeny, IA
+                </h3>
+
+                <div class="date">
+                    May 2026 – August 2026
+                </div>
+
+                <ul>
+
+                    <li>
+                        Designed and created social media graphics
+                        and marketing content using Canva to increase
+                        brand engagement.
+                    </li>
+
+                    <li>
+                        Assisted in creating promotional videos and
+                        captured professional photos for social media
+                        and marketing materials.
+                    </li>
+
+                    <li>
+                        Collaborated with the marketing team to produce
+                        engaging digital content that strengthened the
+                        company's online presence.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- RECREATION SERVICES -->
+
+            <div class="experience-card">
+
+                <h2>
+                    Intramural Supervisor
+                </h2>
+
+                <h3>
+                    Iowa State Recreation Services — Ames, IA
+                </h3>
+
+                <div class="date">
+                    August 2024 – Present
+                </div>
+
+                <ul>
+
+                    <li>
+                        Supervise and manage more than 25 intramural
+                        sports leagues and up to 800 teams while
+                        ensuring smooth operations and adherence to
+                        rules and safety protocols.
+                    </li>
+
+                    <li>
+                        Officiate recreational sports events by making
+                        accurate decisions, maintaining fairness, and
+                        creating a positive competitive environment.
+                    </li>
+
+                    <li>
+                        Provide clear instructions and guidance to
+                        players regarding rules, procedures, and
+                        sportsmanship expectations.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             EDUCATION
+             ========================= -->
+
+        <section class="education-section">
+
+            <h2 class="section-title">
+                Education
+            </h2>
+
+            <div class="education-card">
+
+                <h2>
+                    Iowa State University
+                </h2>
+
+                <h3>
+                    Bachelor of Science — Marketing & Management
+                </h3>
+
+                <p>
+                    August 2024 – May 2028
+                </p>
+
+                <p>
+                    Currently completing a Sales Certificate while
+                    building knowledge in marketing, management,
+                    business, and professional development.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             LEADERSHIP
+             ========================= -->
+
+        <section class="leadership-section">
+
+            <h2 class="section-title">
+                Leadership & Involvement
+            </h2>
+
+
+            <div class="leadership-grid">
+
+
+                <!-- COLLEGIATE WOMEN IN BUSINESS -->
+
+                <div class="leadership-card">
+
+                    <h2>
+                        Collegiate Women in Business
+                    </h2>
+
+                    <h3>
+                        Executive Board — Member Engagement
+                        (2026–Present)
+                    </h3>
+
+                    <p>
+                        Plan and execute four professional and social
+                        engagement events each semester for more than
+                        100 members, helping build a strong sense of
+                        community within the organization.
+                    </p>
+
+                </div>
+
+
+
+                <!-- SOCIAL CHAIR -->
+
+                <div class="leadership-card">
+
+                    <h2>
+                        Social Chair Committee
+                    </h2>
+
+                    <h3>
+                        Committee Member — 2025–2026
+                    </h3>
+
+                    <p>
+                        Collaborated with a community of driven women
+                        to develop leadership, networking, and
+                        professional skills through workshops,
+                        speaker events, and service opportunities.
+                    </p>
+
+                </div>
+
+
+
+                <!-- RECREATION SERVICES BOARD -->
+
+                <div class="leadership-card">
+
+                    <h2>
+                        Recreation Services Board
+                    </h2>
+
+                    <h3>
+                        Board Member — 2026–Present
+                    </h3>
+
+                    <p>
+                        Collaborate with Recreation Services
+                        professionals to help improve programs
+                        and operations.
+                    </p>
+
+                </div>
+
+
+
+                <!-- LEADERS ACADEMY -->
+
+                <div class="leadership-card">
+
+                    <h2>
+                        Recreation Services Leaders Academy
+                    </h2>
+
+                    <h3>
+                        Fall 2025
+                    </h3>
+
+                    <p>
+                        Developed leadership skills and learned
+                        techniques for leading team members while
+                        understanding how individual leadership
+                        styles can work together.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SKILLS
+             ========================= -->
+
+        <section class="skills-section">
+
+            <h2 class="section-title">
+                Skills & Strengths
+            </h2>
+
+            <div class="skills-container">
+
+                <span class="skill">
+                    Leadership
+                </span>
+
+                <span class="skill">
+                    Communication
+                </span>
+
+                <span class="skill">
+                    Teamwork
+                </span>
+
+                <span class="skill">
+                    Organization
+                </span>
+
+                <span class="skill">
+                    Marketing
+                </span>
+
+                <span class="skill">
+                    Social Media
+                </span>
+
+                <span class="skill">
+                    Canva
+                </span>
+
+                <span class="skill">
+                    Event Planning
+                </span>
+
+                <span class="skill">
+                    Problem Solving
+                </span>
+
+                <span class="skill">
+                    Professional Development
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FUTURE
+             ========================= -->
+
+        <section class="goals-section">
+
+            <h2>
+                Looking Ahead
+            </h2>
+
+            <p>
+                I am excited to continue developing my professional
+                experience while applying what I have learned through
+                my education, leadership opportunities, and work
+                experiences. I hope to build a career where I can
+                contribute my marketing and management skills while
+                continuing to learn and grow as a professional.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
