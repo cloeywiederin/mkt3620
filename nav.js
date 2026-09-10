@@ -39,7 +39,7 @@ if (header) {
                     </li>
 
                     <li>
-                        <a href="about.html">About Me</a>
+                        <a href="product.html">Product</a>
                     </li>
 
                     <li>
